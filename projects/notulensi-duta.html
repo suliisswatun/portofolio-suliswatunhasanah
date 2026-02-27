@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Notulensi Duta Polindra | Portofolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="notulensi-duta.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="back">← Kembali ke Portofolio</a>
+</header>
+
+<main class="container">
+
+  <h1>Notulensi Duta Polindra</h1>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <div class="gallery-header">
+      <h2>Dokumentasi Desain</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="../image/halaman utama.jpeg" alt="Halaman Utama" onclick="openPreview(this)">
+      <img src="../image/edit.jpeg" alt="Halaman Menu edit" onclick="openPreview(this)">
+      <img src="../image/isi.jpeg" alt="Halaman Menu isi catatan" onclick="openPreview(this)">
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="content">
+    <p>
+      Proyek ini merupakan website yang dibuat untuk memudahkan proses pencatatan dan penyimpanan notulen hasil rapat secara terstruktur dan digital.
+    </p>
+
+    <h2>Fitur Utama</h2>
+<ul>
+  <li>Pencatatan notulensi rapat berbasis web</li>
+  <li>Penyimpanan data notulensi menggunakan database</li>
+  <li>Manajemen data rapat (tambah, ubah, dan hapus)</li>
+  <li>Antarmuka web yang responsif dan user-friendly</li>
+</ul>
+
+
+
+    <h2>Peran Saya</h2>
+    <p>
+      Proyek ini merupakan website yang dikembangkan untuk membantu proses pendokumentasian dan pengelolaan catatan hasil rapat. Dalam struktur organisasi, saya menjabat sebagai sekretaris yang bertanggung jawab mencatat dan menyimpan hasil pembahasan setiap rapat.
+<br>
+Banyaknya catatan rapat yang tersimpan secara manual menjadi kendala dalam pengelolaan dan pencarian data. Oleh karena itu, saya berinisiatif mengembangkan sebuah aplikasi web berbasis PHP untuk menyimpan, mengelola, dan mengakses catatan rapat secara lebih terstruktur.
+<br>
+Proyek ini menjadi sarana implementasi ilmu pemrograman yang telah saya pelajari ke dalam permasalahan nyata, sehingga sistem yang dikembangkan dapat memberikan manfaat langsung dalam mendukung aktivitas organisasi.
+
+    
+    </p>
+  </section>
+
+  <button id="scrollTopBtn">⬆ Kembali ke Atas</button>
+
+</main>
+
+<!-- MODAL PREVIEW -->
+<div id="previewModal" class="preview-modal">
+  <span class="close-preview" onclick="closePreview()">×</span>
+  <img id="previewImg" alt="Preview Desain">
+</div>
+
+<script src="notulensi-duta.js"></script>
+</body>
+</html>

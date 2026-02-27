@@ -1,0 +1,247 @@
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', Arial, sans-serif;
+}
+
+body{
+  background:#f8f8f8;
+  color:#333;
+  line-height:1.6;
+}
+
+/* ================= NAVBAR ================= */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 8%;
+  background:#800020;
+  color:white;
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-weight:600;
+  font-size:20px;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#ffd6d6;
+}
+
+/* ================= HERO ================= */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:140px 10% 80px;
+  background:white;
+  gap:40px;
+}
+
+.hero-text h1{
+  font-size:32px;
+}
+
+.hero-text h1 span{
+  color:#800020;
+}
+
+.hero-text p{
+  margin:10px 0;
+  color:#555;
+}
+
+.hero-img{
+  width:220px;
+  height:220px;
+  object-fit:cover;
+  border-radius:50%;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ================= SECTION ================= */
+section{
+  padding:70px 10%;
+}
+
+h2{
+  color:#800020;
+  margin-bottom:15px;
+  font-size:24px;
+}
+
+/* ================= PROJECTS ================= */
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  gap:25px;
+  margin-top:30px;
+}
+
+.project-card{
+  background:white;
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* FRAME FOTO PROJECT */
+.img-frame{
+  width:100%;
+  height:160px;
+  overflow:hidden;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+
+.img-frame img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.project-card h3{
+  font-size:16px;
+  color:#800020;
+  text-align:center;
+  line-height:1.3;
+}
+
+/* ================= MODAL ================= */
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.65);
+  justify-content:center;
+  align-items:center;
+  z-index:2000;
+}
+
+.modal-content{
+  background:white;
+  width:85%;
+  max-width:900px;
+  padding:25px;
+  border-radius:16px;
+  max-height:85vh;
+  overflow:auto;
+  animation:fadeUp 0.3s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    transform:translateY(30px);
+    opacity:0;
+  }
+  to{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+
+.close{
+  float:right;
+  font-size:26px;
+  cursor:pointer;
+  color:#800020;
+}
+
+/* GALERI DI MODAL */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+  gap:15px;
+  margin-top:15px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= FOOTER ================= */
+footer{
+  text-align:center;
+  padding:15px;
+  background:#800020;
+  color:white;
+  font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column-reverse;
+    text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:26px;
+  }
+
+  .hero-img{
+    width:180px;
+    height:180px;
+  }
+}
+
+/* ================= MOBILE NAV ================= */
+.menu-toggle{
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+  header{
+    padding:12px 5%;
+  }
+
+  nav{
+    display:none;
+    flex-direction:column;
+    background:#800020;
+    position:absolute;
+    top:60px;
+    right:0;
+    width:200px;
+    padding:12px;
+    border-radius:0 0 0 12px;
+  }
+
+  nav a{
+    margin:10px 0;
+  }
+
+  nav.show{
+    display:flex;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+}

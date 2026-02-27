@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hara Hijab | Portofolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dinas-kebersihan.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="back">← Kembali ke Portofolio</a>
+</header>
+
+<main class="container">
+
+  <h1>
+</h1>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <div class="gallery-header">
+      <h2>Dokumentasi Desain</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="../image/katalog.png" alt="Halaman Utama" onclick="openPreview(this)">
+      <img src="../image/tambah produk.png" alt="Halaman Menu dashboard admin" onclick="openPreview(this)">
+      <img src="../image/fitur ai.png" alt="Halaman Pemesanan" onclick="openPreview(this)">
+     
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="content">
+    <p>
+     Proyek ini masih dalam tahap pengembangan pada mata kuliah Proyek 3, yang berfokus pada pembuatan aplikasi website dan mobile 
+     terintegrasi AI serta pengolahan citra digital. Sistem ini dirancang untuk memberikan 
+     rekomendasi warna hijab yang sesuai dengan warna kulit wanita muslimah berdasarkan hasil 
+     klasifikasi warna kulit, seperti putih, kuning langsat, sawo matang, dan gelap.
+
+
+    <h2>Fitur Utama</h2>
+<ul>
+  <li>Website admin dengan modul dashboard, manajemen katalog produk, penjualan, pengelolaan dataset AI, manajemen pengguna, laporan, dan pengaturan akun</li>
+  <li>Fitur “Glow Match” untuk mengambil atau mengunggah gambar wajah guna melakukan klasifikasi warna kulit dan memberikan rekomendasi warna produk yang sesuai</li>
+  <li>Sistem rekomendasi produk berdasarkan tingkat popularitas dan minat pengguna</li>
+</ul>
+
+
+    <h2>Peran Saya</h2>
+    <p>
+      Dalam proyek yang sedang dikembangkan ini, saya bertanggung jawab dalam perancangan desain aplikasi menggunakan Figma, dengan fokus pada desain sidebar, katalog produk, serta sistem filter berdasarkan kategori, warna, ukuran, harga, material, dan diskon. Selain itu, saya juga merancang halaman favorit dan FAQ untuk meningkatkan pengalaman pengguna.
+Pada tahap pengembangan web, saya bertanggung jawab dalam implementasi halaman katalog produk serta pengembangan fitur AI yang digunakan untuk menyimpan dan mengelola dataset.
+
+<br>
+  <button id="scrollTopBtn">⬆ Kembali ke Atas</button>
+
+</main>
+
+<!-- MODAL PREVIEW -->
+<div id="previewModal" class="preview-modal">
+  <span class="close-preview" onclick="closePreview()">×</span>
+  <img id="previewImg" alt="Preview Desain">
+</div>
+
+<script src="dinas-kebersihan.js"></script>
+</body>
+</html>

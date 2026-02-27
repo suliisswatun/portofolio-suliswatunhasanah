@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dinas Lingkungan Hidup | Portofolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dinas-kebersihan.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="back">← Kembali ke Portofolio</a>
+</header>
+
+<main class="container">
+
+  <h1>
+</h1>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <div class="gallery-header">
+      <h2>Dokumentasi Desain</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="../image/absen.png" alt="Halaman Utama" onclick="openPreview(this)">
+      <img src="../image/absensi.png" alt="Halaman Menu dashboard admin" onclick="openPreview(this)">
+      <img src="../image/admin.png" alt="Halaman Pemesanan" onclick="openPreview(this)">
+      <img src="../image/driver.png" alt="Halaman Admin" onclick="openPreview(this)">
+      <img src="../image/ituuu.png" alt="Halaman Admin" onclick="openPreview(this)">
+      <img src="../image/monitor.png" alt="Halaman Admin" onclick="openPreview(this)">
+      <img src="../image/proyek 2.png" alt="Halaman Admin" onclick="openPreview(this)">
+      <img src="../image/proyekk.png" alt="Halaman Admin" onclick="openPreview(this)">
+      <img src="../image/tugas.png" alt="Halaman Admin" onclick="openPreview(this)">
+      <img src="../image/yaitu.png" alt="Halaman Admin" onclick="openPreview(this)">
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="content">
+    <p>
+     Proyek ini merupakan pengembangan website prototype sistem monitoring kendaraan pengangkut sampah berbasis IoT dan GPS smartphone
+      untuk meningkatkan efisiensi operasional. Platform ini mampu mendeteksi potensi bahaya di lapangan, 
+      seperti kondisi sopir mengantuk, serta menyediakan pelacakan rute secara real-time dan rekomendasi jalur terdekat 
+      berdasarkan titik pembuangan sampah di wilayah Indramayu. Fitur monitoring kamera telah berhasil diimplementasikan secara
+       real-time dan saat 
+     ini sistem masih dalam tahap pengujian sebelum implementasi operasional penuh.
+    
+
+
+    <h2>Fitur Utama</h2>
+<ul>
+  <li>Absensi dan manajemen data driver</li>
+  <li>Monitoring kendaraan menggunakan ESP32-CAM (real-time camera streaming)</li>
+  <li>Pelacakan posisi kendaraan berbasis GPS smartphone (real-time tracking)</li>
+  <li>Monitoring konsumsi bahan bakar berdasarkan estimasi jarak tempuh dan durasi perjalanan</li>
+  <li>Informasi detail kendaraan dan status kondisi operasional</li>
+</ul>
+
+
+    <h2>Peran Saya</h2>
+    <p>
+      Dalam proyek ini, saya bertanggung jawab dalam pengembangan frontend dan backend dengan fokus pada pengembangan modul user (driver) dan admin.
+
+Pada sisi user, saya mengimplementasikan sistem registrasi serta logika absensi terintegrasi, di mana ketika driver melakukan absensi hadir, 
+sistem monitoring akan aktif secara otomatis, dan akan nonaktif kembali saat driver menyelesaikan pekerjaan dan fitur rekomendasi rute perjalanan.
+
+Pada sisi admin, saya mengembangkan fitur autentikasi (register, login, lupa password, dan reset password) yang terintegrasi dengan Fonnte untuk memberikan kode unik yang digunakan pada reset password, 
+serta dashboard admin, halaman monitoring, manajemen data driver, pengelolaan profil, monitoring bahan bakar, pelacakan posisi driver berbasis GPS.
+    </p>
+  </section>
+
+  <button id="scrollTopBtn">⬆ Kembali ke Atas</button>
+
+</main>
+
+<!-- MODAL PREVIEW -->
+<div id="previewModal" class="preview-modal">
+  <span class="close-preview" onclick="closePreview()">×</span>
+  <img id="previewImg" alt="Preview Desain">
+</div>
+
+<script src="dinas-kebersihan.js"></script>
+</body>
+</html>
