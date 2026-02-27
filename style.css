@@ -184,12 +184,28 @@ h2{
 }
 
 /* ================= FOOTER ================= */
-footer{
-  text-align:center;
-  padding:15px;
-  background:#800020;
-  color:white;
-  font-size:14px;
+footer {
+  background-color: #800020;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -244,4 +260,5 @@ footer{
   .menu-toggle{
     display:block;
   }
+  
 }
